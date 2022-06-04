@@ -1,7 +1,9 @@
 # My cookbook
 Projeto de Aplicação Web usando Ktor, desenvolvido em prol de uma das notas da disciplina de Linguagem de Programação Funcional do curso de engenharia da computação da Escola Politécnica de Pernambuco.
 
-O projeto se trata de um site que permite o cadastro de usuários, e após o registro eles poderão salvar receitas culinárias para consutarem sempre que quiserem.
+O projeto se trata de um site que permite o cadastro de usuários, e após o registro eles poderão salvar receitas culinárias para consutarem sempre que quiserem. 
+
+Trabalhar com sessões, acessibilidade, responsividade e segurança, não foi o foco dessa aplicação, mas sim a prática com a linguagem de marcação HTML, linguagem de estilização CSS e linguagem de programação Kotlin no paradigma funcional.
 
 Os arquivos e pastas deste projeto:
 
