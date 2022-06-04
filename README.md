@@ -28,7 +28,7 @@ kotlinc -cp ktor.jar:. servidor.kt
 
 Compila o código do FrontEnd:
 ```
-kotlinc-js FrontEnd.kt -output static/FrontEnd.js
+kotlinc-js frontend.kt -output static/js/main.js
 ```
 
 Executa o servidor Web:
