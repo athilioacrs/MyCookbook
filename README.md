@@ -14,6 +14,9 @@ Os arquivos e pastas deste projeto:
 * __static/css/loader-login-signup.css__: Arquivo CSS que estiliza as páginas de login e cadastro que são geradas pelo backend
 * __static/css/styles.css__: Arquivo CSS que estiliza a página index.html e as demais páginas que são geradas pelo backend
 * __static/db-fake__: Diretório que contém arquivos .txt que auxiliam na persistência de informações
+* __static/db-fake/users.txt__: Arquivo .txt que guarda as informações dos usuários cadastrados
+* __static/db-fake/recipes-athilio.txt__: Arquivo .txt que guarda as receitas salvas pelo usuário de exemplo "athilio"
+* __static/db-fake/recipes-kalel.txt__: Arquivo .txt que guarda as receitas salvas pelo usuário de exemplo "kalel"
 * __static/images__: Diretório que contém as imagens usadas na aplicação
 * __static/js__: Diretório reservado para arquivos .js
 * __static/js/main.js__: Código de frontend.kt compilador para Javascript
