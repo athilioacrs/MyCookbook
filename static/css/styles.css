@@ -1,0 +1,367 @@
+:root {
+    --green: #157515;
+    --amber: #FF7F11;
+    --red-orange: #FF3F00;
+    --dim-gray: #6C6C6C;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: Helvetica, sans-serif;
+}
+
+body header.header-main {
+    height: 10vh;
+
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    padding: 0 20px;
+    
+    box-shadow: 0px 0px 5px black ;
+
+    box-sizing: border-box;
+}
+
+body header.header-main div.container {
+    display: flex;
+}
+
+body header.header-main div.container a.btn {
+    width: 110px;
+    height: 40px;
+
+    text-decoration: none;
+    font-weight: 700;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    border-radius: 40px;
+
+    box-sizing: border-box;
+}
+
+body header.header-main div.container a.btn-login {
+    color: var(--dim-gray);
+
+    margin-right: 5px;
+
+    border: 3px solid var(--dim-gray);
+}
+
+header.header-main div.container a.btn-login:hover {
+    background-color: rgba(0, 0, 0, 0.2);
+}
+
+body header.header-main div.container a.btn-signup {
+    background-color: var(--green);
+
+    color: white;
+}
+
+header.header-main div.container a.btn-signup:hover {
+    background-color: rgb(16, 92, 16);
+}
+
+header.header-main div.container a.link-exit {
+    font-size: 1.2rem;
+    font-weight: 600;
+    text-decoration: none;
+    color: red;
+    cursor: pointer;
+}
+
+header.header-main div.container a.link-exit:hover {
+    text-decoration: underline;
+}
+
+body header div.container nav {
+    display: flex;
+    align-items: center;
+}
+
+body header div.container ul {
+    display: flex;
+
+    list-style: none;
+}
+
+body header div.container li {
+    margin-left: 10px;
+}
+
+body main {
+    height: 80vh;
+
+    background: linear-gradient(0deg, rgba(0, 0, 0, 0.8)30%, rgba(0, 0, 0, 0.001)), url("/imgs/italian-cuisine.jpg");
+    background-attachment: fixed;
+    background-size: cover;
+    background-position: bottom;
+    background-repeat: no-repeat;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+body main .text-main {
+    width: 65%;
+
+    text-align: center;
+    font-size: 2.2rem;
+    color:white;
+    text-shadow: 3px 3px 5px black;
+}
+
+section {
+    height: 100vh;
+}
+
+footer {
+    height: 10vh;
+
+    background-color: var(--dim-gray);
+
+    color: white;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+footer div.container {
+    height: 70%;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+}
+
+a#add-recipe {
+    margin: auto 20px;
+
+    font-size: 1.2rem;
+    font-weight: 700;
+    color: var(--green);
+
+    cursor: pointer;
+}
+
+a#add-recipe:hover {
+    text-decoration: underline;
+} 
+
+
+div#render-area {
+    width: 100%;
+    min-height: 80vh;
+    display: flex;
+    justify-content: center;
+}
+
+div.recipes, div.recipe-open {
+    width: 70%;
+}
+
+div.recipes p#paragraph-alone {
+    font-size: 1.8rem;
+    text-align: center;
+    color: var(--dim-gray);
+
+    margin: 25% 0;
+}
+
+div.recipe {
+    width: 100%;
+    height: 120px;
+
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    background-color: var(--green);
+
+    margin-top: 15px;
+    padding: 20px 30px; 
+
+    color: white;
+
+    border-radius: 20px;
+
+    box-sizing: border-box;
+}
+
+div.recipe h3 {
+    font-size: 2rem;
+    font-weight: 700;
+}
+
+div.recipe h3 a {
+    color: white;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+div.recipe h3 a:hover {
+    text-decoration: underline;
+}
+
+div.recipe p {
+    font-size: 1.2rem;
+    font-weight: 400;
+}
+
+div.recipe img {
+    cursor: pointer;
+}
+
+div.recipe-open header {
+    height: 80px;
+    
+    display: flex;
+    align-items: center;
+}
+
+div.recipe-open header h3 {
+    font-size: 2rem;
+}
+
+
+
+div.recipe-open header a.btn-come-back {
+    width: 40px;
+    height: 40px;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    background-color: var(--green);
+
+    border-radius: 20px;
+
+    margin-right: 20px;
+
+    cursor: pointer;
+}
+
+div.recipe-open div.body-recipe {
+    width: 80%;
+    margin: 0 auto;
+}
+
+div.recipe-open div.body-recipe h4 {
+    width: 100%;
+    height: 32px;
+
+    font-size: 1.5rem;
+    
+    border-bottom: 2px solid black;
+}
+
+div.recipe-open div.body-recipe div.container {
+    width: 95%;
+    margin: 20px auto 30px auto;
+}
+
+div.recipe-open div.body-recipe p {
+    text-indent: 1.2rem;
+
+    margin-left: 10px;
+}
+
+div.recipe-open div.body-recipe ol.preparation-mode {
+    width: 95%;
+    margin-left: 12px;
+    font-size: 1.5rem;
+    font-style: oblique;
+}
+
+div.recipe-open div.body-recipe ol.preparation-mode li {
+    margin-bottom: 10px;
+}
+
+div.recipe-open div.body-recipe ol.preparation-mode li p {
+    font-size: 1rem;
+    font-style: normal;
+}
+
+div.form-recipe {
+    width: 80vw;
+    min-height: 80vh;
+
+    margin: 0 auto;
+}
+
+div.form-recipe h3{
+    margin-top: 20px;
+
+    font-size: 1.4rem;
+}
+
+div.form-recipe div.container {
+    display: flex;
+    flex-direction: column;
+
+    margin: 15px 0;
+}
+
+div.form-recipe div#btns-form {
+    display: flex;
+}
+
+div.form-recipe button {
+    width: 120px;
+    height: 35px;
+    color: white;
+    font-size: 1.2rem;
+
+    background-color: rgb(21, 117, 21);
+
+    border: none;
+
+    cursor: pointer;
+}
+
+div.form-recipe div#cancel-recipe{
+    width: 120px;
+    height: 35px;
+
+    color: white;
+    font-size: 1.2rem;
+    font-weight: 500;
+
+    background-color: red;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    margin-left: 12px;
+
+    border: none;
+
+    cursor: pointer;
+}
+
+div.form-recipe form {
+    margin-bottom: 35px;
+}
+
+div.form-recipe form input {
+    height: 35px;
+    padding: 0 10px;
+}
+
+div.form-recipe form textarea {
+    padding: 10px 10px;
+}
